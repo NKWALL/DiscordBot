@@ -1,0 +1,7 @@
+aiohttp>=3.10,<4
+certifi>=2024.7
+discord.py>=2.4,<3
+google-genai>=1.0,<2
+python-dotenv>=1.0,<2
+tweepy>=4.14,<5
+

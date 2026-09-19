@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "discord-life-assistant"
+version = "1.0.0"
+description = "A modular Discord bot integrating daily information, maps, entertainment, AI, and community management."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "aiohttp>=3.10,<4",
+  "certifi>=2024.7",
+  "discord.py>=2.4,<3",
+  "google-genai>=1.0,<2",
+  "python-dotenv>=1.0,<2",
+  "tweepy>=4.14,<5",
+]
+
+[project.scripts]
+discord-life-assistant = "discord_bot.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
