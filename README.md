@@ -42,6 +42,10 @@ flowchart TB
 
 Bot 透過 Discord Gateway 接收斜線指令、訊息與成員狀態事件，依功能呼叫外部 HTTP API，再將資料配對、篩選、計算及格式化，最後透過 Discord REST API 回覆文字、Embed 或地圖圖片。
 
+## 功能展示畫面
+
+作品集 PDF 中的畫面為配合版面與檔案大小而經過縮放；動態關鍵字回覆、每日天氣推播及路線比較功能的高解析圖片整理於[功能展示頁面](docs/screenshots/README.md)。
+
 ## 功能與指令
 
 ### 一般工具
